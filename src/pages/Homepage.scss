@@ -1,0 +1,62 @@
+@import "./mixins.scss";
+
+// --------------------START SECTION--------------------
+
+.start__section {
+}
+
+.start__block-wrapper {
+  padding-right: rem(63);
+
+  @media (max-width: 1270px) {
+    padding-right: adaptiv-num-rem(0, 63, 1270, 600);
+  }
+
+  @media (max-width: 600px) {
+    padding-right: 0;
+  }
+}
+
+.start__block-main {
+  gap: rem(40);
+}
+
+.start__block-left {
+  h1,
+  p {
+    color: $colorWhite;
+  }
+
+  h1 {
+    font-family: $fontTitle;
+    font-weight: 700;
+    font-size: rem(64);
+    line-height: rem(70);
+    padding-bottom: rem(130);
+  }
+
+  p {
+    font-family: $fontText;
+    font-weight: 400;
+    font-size: rem(20);
+    line-height: rem(27);
+  }
+}
+
+.start__block-right {
+  max-width: rem(376);
+  flex: 1 1 auto;
+  justify-content: center;
+  margin-left: auto;
+
+  &--img {
+    max-width: rem(333);
+    max-height: rem(668);
+    min-width: rem(161);
+    min-height: rem(323);
+
+    img {
+      @include img(contain); // mixin for img
+    }
+  }
+}

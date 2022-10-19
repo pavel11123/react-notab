@@ -1,0 +1,180 @@
+@import "./mixins.scss";
+
+.header {
+  padding: rem(35) 0;
+}
+
+.header__main {
+  align-items: center;
+
+  @media (max-width: 600px) {
+    justify-content: space-between;
+  }
+}
+
+// logo block
+.header__logo {
+  &-wrapper {
+    cursor: pointer;
+    align-items: center;
+    gap: rem(25);
+
+    @media (max-width: 1270px) {
+      gap: adaptiv-num-rem(10, 25, 1270, 320);
+    }
+  }
+
+  // logo cube - left block
+  &-left {
+    position: relative;
+    max-width: rem(79);
+    max-height: rem(79);
+    min-width: rem(38);
+    min-height: rem(38);
+  }
+
+  // logo text - right block
+  &-right {
+    max-width: rem(96);
+    max-height: rem(25);
+    min-width: rem(47);
+    min-height: rem(12);
+  }
+
+  &-left,
+  &-right {
+    img,
+    svg {
+      @include img(contain); // mixin for img
+    }
+  }
+
+  // rubber layout > 1440px
+  @media (min-width: 1441px) {
+    &-left {
+      max-width: auto;
+      max-height: auto;
+      width: rem(79);
+      height: rem(79);
+    }
+
+    &-right {
+      max-width: auto;
+      max-height: auto;
+      width: rem(96);
+      height: rem(25);
+    }
+  }
+
+  @media (max-width: 1270px) {
+    &-left {
+      width: adaptiv-num-rem(38, 79, 1270, 320);
+      height: adaptiv-num-rem(38, 79, 1270, 320);
+      max-height: auto;
+      min-width: auto;
+      min-height: auto;
+    }
+
+    &-right {
+      width: adaptiv-num-rem(47, 96, 1270, 320);
+      height: adaptiv-num-rem(12, 25, 1270, 320);
+      max-width: auto;
+      max-height: auto;
+      min-width: auto;
+      min-height: auto;
+    }
+  }
+
+  // rubber layout < 320px
+  @media (max-width: 319px) {
+    &-left {
+      max-width: auto;
+      max-height: auto;
+      width: rem(38);
+      height: rem(38);
+    }
+
+    &-right {
+      max-width: auto;
+      max-height: auto;
+      width: rem(47);
+      height: rem(12);
+    }
+  }
+}
+
+.header__login {
+  margin-left: rem(108);
+  position: relative;
+  padding-left: rem(38);
+  cursor: pointer;
+
+  @media (max-width: 600px) {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  // icon user
+  &::before {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: rem(26);
+    height: 100%;
+    background: url("../../../public/img/icon/login.svg") no-repeat center;
+    background-size: contain;
+
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  @media (min-width: 601px) {
+    // animation for user
+    &:hover::before {
+      animation: coin 1s;
+      -webkit-animation: coin 1s;
+    }
+
+    @keyframes coin {
+      from {
+        transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+        -moz-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        -o-transform: rotateY(0deg);
+      }
+      to {
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+      }
+    }
+  }
+
+  span {
+    font-family: $fontText;
+    color: $colorWhite;
+    font-weight: 500;
+    font-size: rem(18);
+    line-height: rem(25);
+
+    // bottom line for text Login
+    &::after {
+      content: " ";
+      display: block;
+      height: rem(1);
+      width: 100%;
+      background-color: #ffffff;
+    }
+
+    @media (max-width: 1270px) {
+      font-size: adaptiv-num-rem(14, 18, 1270, 320);
+      line-height: adaptiv-num-rem(19, 25, 1270, 320);
+    }
+  }
+}

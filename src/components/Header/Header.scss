@@ -20,7 +20,7 @@
     gap: rem(25);
 
     @media (max-width: 1270px) {
-      gap: adaptiv-num-rem(10, 25, 1270, 320);
+      gap: adaptiv-num-rem(10, 25, 1270, 375);
     }
   }
 
@@ -68,16 +68,16 @@
 
   @media (max-width: 1270px) {
     &-left {
-      width: adaptiv-num-rem(38, 79, 1270, 320);
-      height: adaptiv-num-rem(38, 79, 1270, 320);
+      width: adaptiv-num-rem(38, 79, 1270, 375);
+      height: adaptiv-num-rem(38, 79, 1270, 375);
       max-height: auto;
       min-width: auto;
       min-height: auto;
     }
 
     &-right {
-      width: adaptiv-num-rem(47, 96, 1270, 320);
-      height: adaptiv-num-rem(12, 25, 1270, 320);
+      width: adaptiv-num-rem(47, 96, 1270, 375);
+      height: adaptiv-num-rem(12, 25, 1270, 375);
       max-width: auto;
       max-height: auto;
       min-width: auto;
@@ -85,8 +85,8 @@
     }
   }
 
-  // rubber layout < 320px
-  @media (max-width: 319px) {
+  // rubber layout < 375px
+  @media (max-width: 374px) {
     &-left {
       max-width: auto;
       max-height: auto;
@@ -173,8 +173,8 @@
     }
 
     @media (max-width: 1270px) {
-      font-size: adaptiv-num-rem(14, 18, 1270, 320);
-      line-height: adaptiv-num-rem(19, 25, 1270, 320);
+      font-size: adaptiv-num-rem(14, 18, 1270, 375);
+      line-height: adaptiv-num-rem(19, 25, 1270, 375);
     }
   }
 }

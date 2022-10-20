@@ -7,8 +7,8 @@ html {
     font-size: calc(100vw / 1440 * 16);
   }
 
-  @media (max-width: 319px) {
-    font-size: calc(100vw / 319 * 16);
+  @media (max-width: 374px) {
+    font-size: calc(100vw / 374 * 16);
   }
 }
 
@@ -71,3 +71,14 @@ html {
 // ---------BEM-----------
 
 // ---------button app-----------
+.button__store {
+  &-ios,
+  &-google {
+    flex: 1 1 auto;
+    cursor: pointer;
+
+    img {
+      @include img(contain); // mixin for img
+    }
+  }
+}

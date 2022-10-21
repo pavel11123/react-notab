@@ -47,6 +47,18 @@ const Homepage = () => {
             </div>
           </div>
         </section>
+        <section className="info__section">
+          <div className="info__container d-fl-wrap">
+            <a href="/" className="info__block info__block-left">
+              <p>Would like to become a member, please contact us</p>
+              <a href="/">support@notab.com</a>
+            </a>
+            <a href="/" className="info__block info__block-right">
+              <p>Already a partner?</p>
+              <a href="/">Login</a>
+            </a>
+          </div>
+        </section>
       </main>
     </>
   );

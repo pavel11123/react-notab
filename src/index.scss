@@ -70,6 +70,25 @@ html {
 
 // ---------BEM-----------
 
+// ---------title-----------
+.main__title {
+  font-family: $fontTitle;
+  color: $colorWhite;
+  font-weight: 700;
+  font-size: clamp(rem(24), 4.02vw, rem(51));
+  line-height: clamp(rem(29), 4.88vw, rem(62));
+  padding-bottom: rem(23);
+}
+
+// ---------title-----------
+.main__text {
+  font-family: $fontText;
+  color: $colorWhite;
+  font-weight: 400;
+  font-size: clamp(rem(16), 1.42vw, rem(18));
+  line-height: clamp(rem(22), 1.97vw, rem(25));
+}
+
 // ---------button app-----------
 .button__store {
   &-ios,

@@ -59,6 +59,30 @@ const Homepage = () => {
             </a>
           </div>
         </section>
+        <section className="mission__section">
+          <div className="mission__container d-fl">
+            <div className="mission__block mission__block-left">
+              <div className="mission__block-img">
+                <img src="./img/photo/phone__mission.webp" alt="phone" />
+              </div>
+              <div className="mission__block-img--mobile">
+                <img src="./img/photo/phone.webp" alt="phone" />
+              </div>
+            </div>
+            <div className="mission__block mission__block-right">
+              <h2 className="main__title">Our mission and vision</h2>
+              <p className="main__text">
+                While technology is our sweet spot, we’ve developed our vision
+                alongside our customers to ensure your everyday problems are
+                solved through simplistic tools. And as your business grows,
+                we’ll grow right alongside with you.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section className="scanner__section">
+          <div className="scanner__background"></div>
+        </section>
       </main>
     </>
   );

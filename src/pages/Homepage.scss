@@ -288,3 +288,81 @@
     text-decoration-line: underline;
   }
 }
+
+// --------------------mission SECTION--------------------
+
+.mission__section {
+  margin-top: clamp(rem(110), 18.58vw, rem(236));
+}
+
+.mission__container {
+  gap: clamp(rem(30), 6.3vw, rem(80));
+
+  @media (max-width: 700px) {
+    flex-direction: column-reverse;
+    gap: clamp(rem(160), 25.71vw, rem(180));
+  }
+}
+
+.mission__block {
+  &-left {
+    margin-left: rem(-340);
+    @media (max-width: 700px) {
+      margin-left: 0;
+    }
+  }
+
+  &-right {
+    margin-left: auto;
+    max-width: rem(323);
+    margin-right: rem(98);
+
+    @media (max-width: 1270px) {
+      margin-right: adaptiv-num-rem(0, 98, 1270, 1106);
+    }
+
+    @media (max-width: 1106px) {
+      margin-right: 0;
+    }
+
+    @media (max-width: 700px) {
+      margin-left: 0;
+      max-width: 85.6%;
+    }
+  }
+}
+
+.mission__block-img {
+  font-size: calc(100vw / 1440 * 10);
+  max-width: rem(999);
+  max-height: rem(498);
+
+  img {
+    @include img(contain);
+  }
+
+  @media (min-width: 1441px) {
+    width: rem(999);
+    height: rem(498);
+  }
+
+  @media (max-width: 700px) {
+    display: none;
+  }
+
+  &--mobile {
+    display: none;
+
+    @media (max-width: 700px) {
+      display: block;
+      position: relative;
+      padding: 0 0 100% 0;
+
+      img {
+        @include img-absolute(absolute, contain);
+      }
+    }
+  }
+}
+
+// --------------------mission SECTION--------------------

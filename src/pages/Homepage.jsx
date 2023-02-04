@@ -81,7 +81,35 @@ const Homepage = () => {
           </div>
         </section>
         <section className="scanner__section">
-          <div className="scanner__background"></div>
+          <div className="scaner__backgroud-img"></div>
+          <div className="backgroud-gradient"></div>
+          <div className="scanner__container">
+            <div className="scanner__wrapper d-fl-wrap--reverse">
+              <div className="scanner__phone d-fl-wrap">
+                <div className="scanner__phone-img">
+                  <img
+                    src="./img/photo/verification-1.png"
+                    alt="verification 1"
+                  />
+                </div>
+                <div className="scanner__phone-img">
+                  <img
+                    src="./img/photo/verification-2.png"
+                    alt="verification 1"
+                  />
+                </div>
+              </div>
+              <div className="scanner__text">
+                <h2 className="main__title">ID Scanner</h2>
+                <p className="main__text">
+                  Scan, verify, and collect data on each person that walks
+                  through your door to humanize your data. You also get a
+                  digital 86 list as well as a citywide ban list to keep your
+                  venue safe.
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
     </>

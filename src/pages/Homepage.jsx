@@ -111,6 +111,43 @@ const Homepage = () => {
             </div>
           </div>
         </section>
+        <section className="integration__section">
+          <div className="integration__container">
+            <div className="integration__wrapper d-fl-wrap">
+              <div className="integration__text">
+                <h2 className="main__title">BI Tool Integration</h2>
+                <p className="main__text">
+                  We use Business Intelligence Tool that allows you to be
+                  updated what is happening in your business just by one click.
+                  Track revenue and profit by one click.
+                </p>
+              </div>
+              <div className="integration__diagrams">
+                <div className="diagrams__img">
+                  <img src="./img/photo/diagram-1.svg" alt="diagram" />
+                </div>
+                <div className="diagrams__img">
+                  <img src="./img/photo/diagram-2.svg" alt="diagram" />
+                </div>
+                <div className="diagrams__img">
+                  <img src="./img/photo/diagram-3.svg" alt="diagram" />
+                </div>
+                <div className="diagrams__img">
+                  <img src="./img/photo/diagram-4.svg" alt="diagram" />
+                </div>
+                <div className="diagrams__img">
+                  <img src="./img/photo/diagram-5.svg" alt="diagram" />
+                </div>
+                <div className="diagrams__img">
+                  <img src="./img/photo/diagram-6.svg" alt="diagram" />
+                </div>
+                <div className="diagrams__img">
+                  <img src="./img/photo/diagram-7.svg" alt="diagram" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );

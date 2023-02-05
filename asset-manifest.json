@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.d0a94bc6.css",
-    "main.js": "/static/js/main.51cc7654.js",
+    "main.css": "/static/css/main.46d3b95b.css",
+    "main.js": "/static/js/main.cc61eb33.js",
+    "static/media/verification__block-background.png": "/static/media/verification__block-background.ee4099f3177426ce8174.png",
     "static/media/NotoSans-Bold.ttf": "/static/media/NotoSans-Bold.23e70cfbbe0783c66804.ttf",
     "static/media/NotoSans-Bold.woff2": "/static/media/NotoSans-Bold.c0976cf58c92251a98e5.woff2",
     "static/media/NotoSans-Regular.ttf": "/static/media/NotoSans-Regular.eae34fa8f1e0c4c6d797.ttf",
@@ -14,11 +15,11 @@
     "static/media/Manrope-Bold.ttf": "/static/media/Manrope-Bold.15c3a2fdedaee1ebf773.ttf",
     "static/media/login.svg": "/static/media/login.b646934e00aef9af6294.svg",
     "index.html": "/index.html",
-    "main.d0a94bc6.css.map": "/static/css/main.d0a94bc6.css.map",
-    "main.51cc7654.js.map": "/static/js/main.51cc7654.js.map"
+    "main.46d3b95b.css.map": "/static/css/main.46d3b95b.css.map",
+    "main.cc61eb33.js.map": "/static/js/main.cc61eb33.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0a94bc6.css",
-    "static/js/main.51cc7654.js"
+    "static/css/main.46d3b95b.css",
+    "static/js/main.cc61eb33.js"
   ]
 }

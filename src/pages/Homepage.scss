@@ -428,6 +428,10 @@
 
 .scanner__wrapper {
   gap: clamp(rem(15), 3.47vw, rem(50));
+
+  @media (max-width: 400px) {
+    gap: rem(50);
+  }
 }
 
 .scanner__phone {
@@ -452,6 +456,10 @@
       max-height: 100%;
     }
   }
+
+  @media (max-width: 400px) {
+    gap: rem(50);
+  }
 }
 
 .scanner__text {
@@ -460,6 +468,7 @@
   align-self: flex-end;
   margin-top: auto;
   flex: 1 1 rem(300);
+  padding-bottom: rem(25);
 
   @media (max-width: 756px) {
     margin-left: 0;

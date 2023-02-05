@@ -85,7 +85,7 @@ const Homepage = () => {
           <div className="backgroud-gradient"></div>
           <div className="scanner__container">
             <div className="scanner__wrapper d-fl-wrap--reverse">
-              <div className="scanner__phone d-fl-wrap">
+              <div className="scanner__phone">
                 <div className="scanner__phone-img">
                   <img
                     src="./img/photo/verification-1.png"

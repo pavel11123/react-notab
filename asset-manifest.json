@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c767e4c4.css",
-    "main.js": "/static/js/main.cc61eb33.js",
+    "main.css": "/static/css/main.a07339ef.css",
+    "main.js": "/static/js/main.27d8d321.js",
     "static/media/verification__block-background.png": "/static/media/verification__block-background.ee4099f3177426ce8174.png",
     "static/media/NotoSans-Bold.ttf": "/static/media/NotoSans-Bold.23e70cfbbe0783c66804.ttf",
     "static/media/NotoSans-Bold.woff2": "/static/media/NotoSans-Bold.c0976cf58c92251a98e5.woff2",
@@ -15,11 +15,11 @@
     "static/media/Manrope-Bold.ttf": "/static/media/Manrope-Bold.15c3a2fdedaee1ebf773.ttf",
     "static/media/login.svg": "/static/media/login.b646934e00aef9af6294.svg",
     "index.html": "/index.html",
-    "main.c767e4c4.css.map": "/static/css/main.c767e4c4.css.map",
-    "main.cc61eb33.js.map": "/static/js/main.cc61eb33.js.map"
+    "main.a07339ef.css.map": "/static/css/main.a07339ef.css.map",
+    "main.27d8d321.js.map": "/static/js/main.27d8d321.js.map"
   },
   "entrypoints": [
-    "static/css/main.c767e4c4.css",
-    "static/js/main.cc61eb33.js"
+    "static/css/main.a07339ef.css",
+    "static/js/main.27d8d321.js"
   ]
 }
